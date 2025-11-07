@@ -196,7 +196,7 @@ Gemini API interactions are encrypted
 
 No sensitive data is exposed to the AI model
 
-🐛 Troubleshooting
+## Troubleshooting
 Common Issues
 Database Connection Failed
 
@@ -253,7 +253,7 @@ Submit a pull request
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🙏 Acknowledgments
+## Acknowledgments
 Google Gemini AI for powerful natural language processing
 
 Streamlit for the excellent web application framework
