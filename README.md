@@ -48,13 +48,13 @@ A powerful Streamlit application that converts natural language questions into S
 ```
 
 
-###Step 2: Install Dependencies
+### Step 2: Install Dependencies
 ```bash
   pip install streamlit pandas sqlalchemy pymysql requests pyarrow python-dotenv
 ```
 bash
 
-###Step 3: Set Up Environment (Optional)
+### Step 3: Set Up Environment (Optional)
 Create a .env file in the project root:
 
 ```bash
