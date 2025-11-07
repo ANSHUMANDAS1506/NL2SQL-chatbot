@@ -60,10 +60,10 @@ Create a .env file in the project root:
 ```bash
   GEMINI_API_KEY=your_gemini_api_key_here
   DB_HOST=localhost
-  DB_USER=root
+  DB_USER=
   DB_PASSWORD=your_password
-  DB_NAME=company_db
-  DB_PORT=3306
+  DB_NAME=
+  DB_PORT=
 ```
 
 
