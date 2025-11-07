@@ -1,6 +1,6 @@
-Enterprise NL2SQL with Gemini
-A powerful Streamlit application that converts natural language questions into SQL queries using Google's Gemini AI. This enterprise-grade tool provides advanced analytics, confidential data protection, and comprehensive database exploration capabilities.
+# Enterprise NL2SQL with Gemini
 
+A powerful Streamlit application that converts natural language questions into SQL queries using Google's Gemini AI. This enterprise-grade tool provides advanced analytics, confidential data protection, and comprehensive database exploration capabilities.
 
 <img width="1919" height="968" alt="Screenshot 2025-11-07 105638" src="https://github.com/user-attachments/assets/ee7bfdfa-9cc9-43b0-95b7-ebdd43193025" />
 <img width="1919" height="960" alt="Screenshot 2025-11-07 105649" src="https://github.com/user-attachments/assets/27f61b1c-b495-492c-98a1-f3530a562339" />
@@ -8,76 +8,72 @@ A powerful Streamlit application that converts natural language questions into S
 <img width="1912" height="909" alt="Screenshot 2025-11-07 110635" src="https://github.com/user-attachments/assets/46ff421e-2469-4f8b-a83e-e4d291ac2768" />
 <img width="1919" height="899" alt="Screenshot 2025-11-07 110646" src="https://github.com/user-attachments/assets/d416f5fb-0b2a-4b15-9609-7ca1ce6bd424" />
 
-Features
-AI-Powered SQL Generation
-Natural Language Processing: Convert plain English questions into precise SQL queries
+## Features
 
-Gemini 2.0 Flash Integration: Fast and accurate AI model for query generation
+### AI-Powered SQL Generation
+- **Natural Language Processing**: Convert plain English questions into precise SQL queries
+- **Gemini 2.0 Flash Integration**: Fast and accurate AI model for query generation
+- **Smart Query Optimization**: Automatic JOINs, WHERE clauses, and aggregations
+- **Query Caching**: Intelligent caching for faster repeated queries
 
-Smart Query Optimization: Automatic JOINs, WHERE clauses, and aggregations
+### Enterprise Security
+- **Confidential Mode**: Toggle to hide sensitive personal information
+- **Read-Only Access**: Prevents data modification operations
+- **SQL Injection Protection**: Comprehensive security validation
+- **Schema-Only Context**: AI only sees table structures, not actual data
 
-Query Caching: Intelligent caching for faster repeated queries
+### Advanced Analytics
+- **Quick Insights Dashboard**: Real-time database statistics and metrics
+- **Interactive Schema Explorer**: Visual table relationships and column details
+- **Pre-built Analytics**: Sales dashboards, employee analytics, financial overviews
+- **Geographic Analysis**: Customer distribution and regional insights
 
-Enterprise Security
-Confidential Mode: Toggle to hide sensitive personal information
+### Data Management
+- **Query History**: Persistent storage of all generated queries
+- **One-Click Re-run**: Execute previous queries with a single click
+- **CSV Export**: Download query results for further analysis
+- **Multi-Table Support**: Handles complex database relationships
 
-Read-Only Access: Prevents data modification operations
+## Installation
 
-SQL Injection Protection: Comprehensive security validation
+### Prerequisites
+- Python 3.8 or higher
+- MySQL database (or compatible SQL database)
+- Google Gemini API key
 
-Schema-Only Context: AI only sees table structures, not actual data
+### Step 1: Clone or Download
+```bash
+  git clone <repository-url>
+  cd nl2sql-gemini
+```
 
-Advanced Analytics
-Quick Insights Dashboard: Real-time database statistics and metrics
 
-Interactive Schema Explorer: Visual table relationships and column details
-
-Pre-built Analytics: Sales dashboards, employee analytics, financial overviews
-
-Geographic Analysis: Customer distribution and regional insights
-
-Data Management
-Query History: Persistent storage of all generated queries
-
-One-Click Re-run: Execute previous queries with a single click
-
-CSV Export: Download query results for further analysis
-
-Multi-Table Support: Handles complex database relationships
-
-Installation
-Prerequisites
-Python 3.8 or higher
-
-MySQL database (or compatible SQL database)
-
-Google Gemini API key
-
-Step 1: Clone or Download
+###Step 2: Install Dependencies
+```bash
+  pip install streamlit pandas sqlalchemy pymysql requests pyarrow python-dotenv
+```
 bash
-git clone <repository-url>
-cd nl2sql-gemini
-Step 2: Install Dependencies
-bash
-pip install -r requirements.txt
-Or install manually:
 
-bash
-pip install streamlit pandas sqlalchemy pymysql requests pyarrow python-dotenv
-Step 3: Set Up Environment (Optional)
+###Step 3: Set Up Environment (Optional)
 Create a .env file in the project root:
 
-env
-GEMINI_API_KEY=your_gemini_api_key_here
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=company_db
-DB_PORT=3306
+```bash
+  GEMINI_API_KEY=your_gemini_api_key_here
+  DB_HOST=localhost
+  DB_USER=root
+  DB_PASSWORD=your_password
+  DB_NAME=company_db
+  DB_PORT=3306
+```
+
+
 Step 4: Run the Application
-bash
-streamlit run nl2sql_gemini_enhanced.py
-📋 Requirements
+
+```bash
+  streamlit run nl2sql_gemini_enhanced.py
+```
+
+## Requirements
 Core Dependencies
 Package	Version	Purpose
 streamlit	≥1.28.0	Web application framework
@@ -98,7 +94,7 @@ Database Support
 
 ✅ SQL Server (with pyodbc)
 
-🔧 Configuration
+## Configuration
 Database Connection
 Configure your database connection in the sidebar:
 
@@ -119,7 +115,7 @@ Create a new API key
 
 Enter the key in the application sidebar
 
-🎯 Usage Examples
+## Usage Examples
 Basic Queries
 "How many employees are there?"
 
@@ -143,7 +139,7 @@ Complex Joins
 
 "Sales performance by product line and territory"
 
-🏗 Project Structure
+## Project Structure
 text
 nl2sql-gemini/
 ├── nl2sql_gemini_enhanced.py  # Main application
@@ -152,7 +148,7 @@ nl2sql-gemini/
 ├── gemini_cache/             # AI response cache
 ├── query_history.json        # Query history storage
 └── README.md                 # This file
-🔍 Features Deep Dive
+## Features Deep Dive
 Confidential Mode
 When enabled, the application automatically filters out sensitive information:
 
